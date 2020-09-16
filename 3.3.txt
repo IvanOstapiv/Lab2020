@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int x,z,y,a,b,c;
+    printf("x=");
+    scanf("%d",&x);
+    printf("y=");
+    scanf("%d",&y);
+    printf("z=");
+    scanf("%d",&z);
+    c=sqrt(x)+2*sqrt(y*z);
+    b=sqrt(y)-2*sqrt(x*z);
+if (x==0 || y==0 || z==0)
+ {
+  printf("Усі числа стоять під коренем, а значить корінь з нуля взяти не можна.");
+ }
+else if (c==0)
+  {
+   printf("У чисельнику получився нуль, а значить,якщо поділити на любе число завжди дорівнюватиме нуль.");
+   }
+   else if (b==0)
+   {
+     printf("Виконується ділення на нуль.");
+   }
+   else
+   {
+     a=c/b;
+    printf("Значення функції a = %d",a);
+   }
+   
+ }
